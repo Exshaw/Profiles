@@ -1,0 +1,43 @@
+#!name=Advertising
+#!desc=Block Advertising (Mar 06 2024)
+#!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/Advertising.sgmodule
+# @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Module/Block/Advertising.sgmodule
+# @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/StartUp.conf
+# @githubdulong: https://github.com/githubdulong/Script/blob/master/Surge/Script.sgmodule
+
+[URL Rewrite]
+# ---(By ConnersHua)---
+# > 淘宝
+^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/.+\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q\d0\.jpg_\.(heic|webp)$ - REJECT
+# > 京东
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - REJECT
+# > 米家
+^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner - REJECT
+# ------
+
+# ---(By ddgksf2013)---
+# > 京东
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|queryMaterialAdverts) - REJECT
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - REJECT
+# > 京东金融
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - REJECT-200
+# ------
+
+# ---(By githubdulong)---
+# > 京东
+^https:\/\/m\.360buyimg\.com\/mobilecms\/s\d{4}x\d{4} - REJECT
+# > 美团
+^https:\/\/flowplus\.meituan\.net\/v1\/mss_\w+\/linglong\/\d+\.jpg$ - REJECT
+^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ - REJECT
+# > 平安好车主
+^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/(YourSystemName|icore-apps-ad) - REJECT
+# ------
+
+[Script]
+# ---(By ddgksf2013)---
+# > AMDC
+AMDC = type=http-response,requires-body=1,max-size=0,pattern=^http:\/\/amdc\.m\.taobao\.com,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/amdc.js
+# ------
+
+[MITM]
+hostname = %APPEND% gw.alicdn.com, heic.alicdn.com, api.m.jd.com, home.mi.com, bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, m.360buyimg.com, s3plus.meituan.net, flowplus.meituan.net, iobs.pingan.com.cn, amdc.m.taobao.com
