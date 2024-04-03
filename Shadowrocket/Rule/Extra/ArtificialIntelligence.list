@@ -1,0 +1,24 @@
+# Artificial Intelligence (Apr 03 2024)
+# @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
+
+# > ChatGPT
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN,api.statsig.com
+DOMAIN,api-iam.intercom.io
+DOMAIN,chatgpt.livekit.cloud
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,sfo3.turn.livekit.cloud
+DOMAIN-KEYWORD,openaicom
+
+# > Microsoft Copilot
+DOMAIN,copilot.microsoft.com
+DOMAIN,www.bing.com
+DOMAIN,sydney.bing.com
+DOMAIN,location.microsoft.com
+
+# > Gemini
+DOMAIN,gemini.google.com
