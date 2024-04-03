@@ -1,0 +1,29 @@
+#!name=Keep Advertising
+#!desc=Block Keep Advertising (Mar 06 2024)
+#!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/KeepAds.sgmodule
+# @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/KeepStyle.conf
+
+[URL Rewrite]
+^https?:\/\/api\.gotokeep\.com\/guide-webapp\/v\d\/popup\/getPopUp - reject-200
+^https?:\/\/api\.gotokeep\.com\/running\/v\d\/home\/dialog - reject-200
+^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide - reject-200
+^https?:\/\/hc-ssp\.sm\.cn - reject-200
+^https?:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad - reject-200
+^https?:\/\/api.gotokeep.com/cauchy/growth/init - reject-200
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list -l reject-200
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list - reject-200
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list - reject-200
+^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad - reject-200
+^https?:\/\/api\.gotokeep\.com\/ads\/v\d\/ads\/preload - reject-200
+^https?:\/\/api\.gotokeep\.com\/training\/box\/config - reject-200
+^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check - reject-200
+
+[Script]
+Keep = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+Keep = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+Keep = type=http-response,requires-body=1,max-size=0,pattern=https://api.gotokeep.com/homepage/v\d/tab,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+Keep = type=http-response,requires-body=1,max-size=0,pattern=https://api.gotokeep.com/nuocha/course/v2/\w+/preview,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+Keep = type=http-response,requires-body=1,max-size=0,pattern=https://api.gotokeep.com/sportpage/sport/v3/mysport,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+
+[MITM]
+hostname= %APPEND% api.gotokeep.com, kad.gotokeep.com, hc-ssp.sm.cn
