@@ -3,7 +3,6 @@
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/Advertising.sgmodule
 # @ddgksf2013: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Module/Block/Advertising.sgmodule
 
-
 [URL Rewrite]
 (?i)\b\/ad\/ - reject
 (?i)\b\/ads\/ - reject
