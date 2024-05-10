@@ -1,6 +1,6 @@
 #!name=Advertising
 #!desc=Block Advertising (May 09 2024)
-#!category=Block Advertising
+#!category=Block
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Module/Block/Advertising.sgmodule
 
 [URL Rewrite]
