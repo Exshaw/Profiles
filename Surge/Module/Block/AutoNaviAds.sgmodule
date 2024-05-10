@@ -1,7 +1,7 @@
 #!name=AutoNavi Advertising
 #!desc=Block AutoNavi Advertising (May 09 2024)
 #!system=ios
-#!category=Block Advertising
+#!category=Block
 # @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/Amap.conf
 
 [URL Rewrite]
