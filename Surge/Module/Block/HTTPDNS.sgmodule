@@ -1,6 +1,5 @@
 #!name=HTTPDNS
 #!desc=Block HTTPDNS (May 09 2024)
-#!category=Block
 # @VirgilClyne: https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/HTTPDNS.Block.sgmodule
 
 [General]
