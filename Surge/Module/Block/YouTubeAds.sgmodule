@@ -1,7 +1,7 @@
 #!name=YouTube Advertising
 #!desc=Block YouTube Advertising (May 09 2024)
 #!system=ios
-#!category=Block Advertising
+#!category=Block
 # @Maasea: https://github.com/Maasea/sgmodule/blob/master/YouTube.Enhance.sgmodule
 
 [Rule]
