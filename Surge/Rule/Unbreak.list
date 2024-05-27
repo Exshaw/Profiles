@@ -39,6 +39,6 @@ DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
 # > Unity Ads
 DOMAIN-SUFFIX,unityads.unity3d.com,DIRECT
+DOMAIN-SUFFIX,unityads.unitychina.cn,DIRECT
 DOMAIN,cdp.cloud.unity3d.com,DIRECT
-DOMAIN,config.unityads.unitychina.cn,DIRECT
-DOMAIN,unityads.unitychina.cn,DIRECT
+DOMAIN,events.mz.unity3d.com,DIRECT
