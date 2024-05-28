@@ -2,9 +2,10 @@
 #!desc=Price (May 09 2024)
 #!system=ios
 # @githubdulong: https://github.com/githubdulong/Script/blob/master/jd_price2.sgmodule
+# @Yfamily: https://github.com/deezertidal/shadowrocket-rules/blob/main/modules/HistoryPrice.sgmodule
 
 [Script]
-Price = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
+Price = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/deezertidal/private/main/jdprice.js
 
 [MITM]
 hostname = %APPEND% api.m.jd.com
