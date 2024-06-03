@@ -1,11 +1,6 @@
 #!name=YouTube Advertising
 #!desc=Block YouTube Advertising (Jun 03 2024)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/YouTubeAds.sgmodule
-# @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/YoutubeAds.conf
-# @Maasea: https://github.com/Maasea/sgmodule/blob/master/YouTube.Enhance.sgmodule
-
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
 
 [MITM]
 hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com
