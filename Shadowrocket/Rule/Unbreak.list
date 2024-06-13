@@ -44,6 +44,8 @@ DOMAIN-SUFFIX,ibm.com
 DOMAIN-SUFFIX,plex.tv
 # > Steam
 DOMAIN-SUFFIX,steamserver.net
+# > TikTok
+AND,((GEOIP,CN),(DOMAIN,pitaya.bytedance.com))
 # > Unity Ads
 DOMAIN-SUFFIX,unityads.unity3d.com,DIRECT
 DOMAIN-SUFFIX,unityads.unitychina.cn,DIRECT
