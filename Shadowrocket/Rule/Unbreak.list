@@ -1,6 +1,5 @@
 # Unbreak (Jun 13 2024)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Direct+.list
-# @lodepuly: https://gitlab.com/lodepuly/vpn_tool/-/blob/master/Tool/Clash/Rule/Direct.yaml
 
 # > General
 DOMAIN,app.adjust.com
@@ -38,10 +37,6 @@ DOMAIN,analytics.strava.com
 # > Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
-# > Steam
-DOMAIN-SUFFIX,steamserver.net
-# > TikTok
-AND,((GEOIP,CN),(DOMAIN,pitaya.bytedance.com))
 # > Unity Ads
 DOMAIN-SUFFIX,unityads.unity3d.com,DIRECT
 DOMAIN-SUFFIX,unityads.unitychina.cn,DIRECT
