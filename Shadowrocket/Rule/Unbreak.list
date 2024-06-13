@@ -38,10 +38,6 @@ DOMAIN,analytics.strava.com
 # > Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
-# > IBM
-DOMAIN-SUFFIX,ibm.com
-# > Plex
-DOMAIN-SUFFIX,plex.tv
 # > Steam
 DOMAIN-SUFFIX,steamserver.net
 # > TikTok
