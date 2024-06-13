@@ -1,0 +1,14 @@
+#!name=CloudMusic
+#!desc=CloudMusic (Jun 12 2024)
+#!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/CloudMusic.sgmodule
+# @Yuheng: https://github.com/Yuheng0101/X/blob/main/Scripts/NeteaseCloudMusic/netease.sgmodule
+
+[Rewrite]
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get - reject-200
+
+[Script]
+CloudMusicResponse = type=http-response,requires-body=1,binary-body-mode=1,max-size=-1,timeout=60,pattern=^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/client\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)),script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js
+CloudMusicRequest = type=http-request,requires-body=1,binary-body-mode=1,max-size=-1,timeout=60,pattern=^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query),script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js
+
+[MITM]
+hostname = %APPEND% interface*.music.163.com
