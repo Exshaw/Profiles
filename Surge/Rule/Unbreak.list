@@ -1,4 +1,4 @@
-# Unbreak (May 27 2024)
+# Unbreak (Jun 24 2024)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Direct+.list
 
 # > General
@@ -37,6 +37,8 @@ DOMAIN,analytics.strava.com
 # > Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
+# > iQIYI
+DOMAIN-SUFFIX,msg.qy.net
 # > Unity Ads
 DOMAIN-SUFFIX,unityads.unity3d.com,DIRECT
 DOMAIN-SUFFIX,unityads.unitychina.cn,DIRECT
