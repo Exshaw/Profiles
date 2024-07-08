@@ -1,5 +1,5 @@
-#!name=Block HTTPDNS
-#!desc=Block HTTPDNS (May 22 2024)
+#!name=HTTPDNS
+#!desc=Block HTTPDNS (Jul 08 2024)
 # @VirgilClyne: https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/HTTPDNS.Block.sgmodule
 
 [General]
