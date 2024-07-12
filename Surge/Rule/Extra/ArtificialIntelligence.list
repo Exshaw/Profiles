@@ -16,9 +16,11 @@ DOMAIN-KEYWORD,openaicom
 
 # > Microsoft Copilot
 DOMAIN,copilot.microsoft.com
-DOMAIN,www.bing.com
 DOMAIN,sydney.bing.com
-DOMAIN,location.microsoft.com
+DOMAIN,www.bing.com
 
 # > Gemini
+DOMAIN,ai.google.dev
+DOMAIN,bard.google.com
 DOMAIN,gemini.google.com
+DOMAIN,generativelanguage.googleapis.com
