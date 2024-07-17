@@ -40,7 +40,7 @@ DOMAIN,msg.umengcloud.com
 # > iQIYI
 DOMAIN-SUFFIX,msg.qy.net
 # > Unity Ads
-DOMAIN-SUFFIX,unityads.unity3d.com,DIRECT
-DOMAIN-SUFFIX,unityads.unitychina.cn,DIRECT
-DOMAIN,cdp.cloud.unity3d.com,DIRECT
-DOMAIN,events.mz.unity3d.com,DIRECT
+DOMAIN-SUFFIX,unityads.unity3d.com
+DOMAIN-SUFFIX,unityads.unitychina.cn
+DOMAIN,cdp.cloud.unity3d.com
+DOMAIN,events.mz.unity3d.com
