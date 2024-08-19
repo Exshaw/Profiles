@@ -1,5 +1,5 @@
 #!name=Advertising
-#!desc=Block Advertising (Aug 06 2024)
+#!desc=Block Advertising (Aug 19 2024)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/Advertising.sgmodule
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Module/Block/Advertising.sgmodule
 
@@ -17,3 +17,23 @@
 (?i)\badvertisement - reject
 (?i)\badvertising - reject
 (?i)\bsplash_screen - reject
+
+# > 什么值得买
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul - reject-200
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul - reject-200
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/wiki_related_modul - reject-200
+
+[Script]
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/s-api.smzdm\.com\/sou\/search_default_keyword,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/app-api\.smzdm\.com\/util\/loading,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/.*zdmimg\.com\/cpm\/api\/v\d\/advert_distribution\/get_all_advertise,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/homepage-api\.smzdm\.com\/v3\/home,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/haojia-api\.smzdm\.com\/home\/list,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/article_releated_modul,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/baike-api\.smzdm\.com\/home_v3\/list,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+SMZDM = type=http-response,requires-body=1,pattern=^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner,script-path=https://github.com/ddgksf2013/Scripts/raw/master/smzdm_json.js
+
+[MITM]
+hostname = %APPEND% app-api.smzdm.com, *.zdmimg.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com
