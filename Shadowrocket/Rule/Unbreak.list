@@ -37,8 +37,6 @@ DOMAIN,analytics.strava.com
 # > Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
-# > Apple Maps
-DOMAIN-SUFFIX,ls.apple.com
 # > iQIYI
 DOMAIN-SUFFIX,msg.qy.net
 # > Unity Ads
