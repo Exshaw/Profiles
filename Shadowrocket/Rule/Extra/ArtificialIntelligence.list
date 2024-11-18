@@ -1,4 +1,4 @@
-# Artificial Intelligence (Nov 14 2024)
+# Artificial Intelligence (Nov 18 2024)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 
 # > ChatGPT
@@ -33,5 +33,4 @@ DOMAIN,ai.google.dev
 DOMAIN,bard.google.com
 DOMAIN,gemini.google.com
 DOMAIN,generativelanguage.googleapis.com
-DOMAIN,aistudio.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,proactivebackend-pa.googleapis.com
