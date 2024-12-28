@@ -1,5 +1,5 @@
 #!name=HTTPDNS
-#!desc=Block HTTPDNS (Nov 02 2024)
+#!desc=Block HTTPDNS (Dec 28 2024)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/HTTPDNS.sgmodule
 # @VirgilClyne: https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/HTTPDNS.Block.sgmodule
 
@@ -61,6 +61,12 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve,pre-matching
 # refer: https://docs.jdcloud.com/cn/jd-cloud-dns/HTTPDNS
 # refer: https://docs.jdcloud.com/cn/httpdns/interface-specification
 IP-CIDR,103.224.222.208/32,REJECT,no-resolve,pre-matching
+
+# Keep
+DOMAIN,httpdns.calorietech.com,REJECT,extended-matching,pre-matching
+
+# Kuaishou
+DOMAIN,kuaishou.httpdns.pro,REJECT,extended-matching,pre-matching
 
 # Meituan
 DOMAIN,httpdns.meituan.com,REJECT,extended-matching,pre-matching
