@@ -1,18 +1,18 @@
 #!name=AutoNavi Advertising
-#!desc=Block AutoNavi Advertising (May 28 2024)
+#!desc=Block AutoNavi Advertising (Feb 15 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/AutoNaviAds.sgmodule
 # @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/Amap.conf
 
 [URL Rewrite]
-^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject-dict
-^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
+^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject
+^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject
 ^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
-^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend - reject-dict
-^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject-img
-^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject-dict
+^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend - reject
+^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject
+^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject
 
 [Script]
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^http:\/\/amdc\.m\.taobao\.com,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amdc.js
+AMDC= type=http-response,requires-body=1,max-size=0,pattern=^http:\/\/amdc\.m\.taobao\.com,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amdc.js
 AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/message\/notice\/list,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
