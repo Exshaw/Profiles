@@ -22,6 +22,10 @@ DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,cp4.cloudflare.com
 DOMAIN,guzzoni.apple.com
 
+# xAI
+DOMAIN,x.ai
+DOMAIN,grok.com
+
 # Microsoft Copilot
 DOMAIN,copilot.microsoft.com
 DOMAIN,sydney.bing.com
