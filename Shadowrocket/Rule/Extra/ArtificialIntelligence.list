@@ -23,8 +23,8 @@ DOMAIN,cp4.cloudflare.com
 DOMAIN,guzzoni.apple.com
 
 # xAI
-DOMAIN,x.ai
-DOMAIN,grok.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
 
 # Microsoft Copilot
 DOMAIN,copilot.microsoft.com
