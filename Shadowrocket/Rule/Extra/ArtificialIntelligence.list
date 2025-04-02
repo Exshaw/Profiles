@@ -1,18 +1,5 @@
-# Artificial Intelligence (Mar 09 2025)
+# Artificial Intelligence (Apr 02 2025)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
-
-# ChatGPT
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN,api.statsig.com
-DOMAIN,api-iam.intercom.io
-DOMAIN,chatgpt.livekit.cloud
-DOMAIN,o33249.ingest.sentry.io
-DOMAIN,openaiapi-site.azureedge.net
-DOMAIN,sfo3.turn.livekit.cloud
-DOMAIN-KEYWORD,openaicom
 
 # Apple Intelligence
 DOMAIN-SUFFIX,smoot.apple.com
@@ -26,6 +13,21 @@ DOMAIN,guzzoni.apple.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
 
+# ChatGPT
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN,api.statsig.com
+DOMAIN,api-iam.intercom.io
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN-KEYWORD,openaiapi
+DOMAIN-KEYWORD,openaicom
+
 # Microsoft Copilot
 DOMAIN,copilot.microsoft.com
 DOMAIN,sydney.bing.com
@@ -33,11 +35,12 @@ DOMAIN,www.bing.com
 DOMAIN-SUFFIX,githubcopilot.com
 
 # Gemini
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN,ai.google.dev
 DOMAIN,bard.google.com
 DOMAIN,gemini.google.com
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,proactivebackend-pa.googleapis.com
 
 # Cloudflare AI Gateway
 DOMAIN,gateway.ai.cloudflare.com
