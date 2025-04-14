@@ -1,12 +1,13 @@
 #!name=Price
-#!desc=Price (Mar 20 2025)
+#!desc=Price (Apr 11 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Price.sgmodule
 # @wf021325: https://github.com/wf021325/qx/blob/main/js/jd_price.js
 # @iab0x00: https://github.com/iab0x00/ProxyRules/blob/main/Rewrite/JD_Price.sgmodule
 # @githubdulong: https://github.com/githubdulong/Script/blob/master/Surge/jd_price2.sgmodule
 
 [Script]
-Price = type=http-response, requires-body=1, max-size=0, binary-body-mode=0, timeout=30, pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html, script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
+Price = type=http-response, requires-body=1, max-size=0, timeout=60, pattern=^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+Price = type=http-response, requires-body=1, max-size=0, timeout=60, pattern=^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
 
 [MITM]
 hostname = %APPEND% in.m.jd.com
