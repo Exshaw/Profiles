@@ -1,5 +1,5 @@
 #!name=YouTube Advertising
-#!desc=Block YouTube Advertising (Dec 09 2024)
+#!desc=Block YouTube Advertising (May 06 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/YouTubeAds.sgmodule
 # @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/YoutubeAds.conf
 # @Maasea: https://github.com/Maasea/sgmodule/blob/master/YouTube.Enhance.sgmodule
@@ -12,7 +12,7 @@
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
 
 [Script]
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine=auto,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.preview.js,argument="{"lyricLang":"off","captionLang":"off","blockUpload":false,"blockImmersive":false,"debug":false}"
+YouTube = type=http-response,requires-body=1,max-size=0,binary-body-mode=1,pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),script-path=script-response-body https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/Script/Youtube/youtube.response.js
 
 [MITM]
 hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com
