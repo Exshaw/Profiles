@@ -1,7 +1,7 @@
 #!name=Advertising+
 #!desc=Block Advertising+ (May 06 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/AdvertisingPlus.sgmodule
-# @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/BilibiliAds.conf
+# @ddgksf2013: https://github.com/ddgksf2013/Modules/blob/main/Adblock/BilibiliAds.sgmodule
 
 [URL Rewrite]
 ^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive - reject
