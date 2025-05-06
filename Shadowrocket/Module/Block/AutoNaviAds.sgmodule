@@ -1,7 +1,7 @@
 #!name=AutoNavi Advertising
-#!desc=Block AutoNavi Advertising (May 01 2025)
+#!desc=Block AutoNavi Advertising (May 06 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/AutoNaviAds.sgmodule
-# @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/Amap.conf
+# @ddgksf2013: https://github.com/ddgksf2013/Modules/blob/main/Adblock/AmapAds.sgmodule
 
 [URL Rewrite]
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject
@@ -13,15 +13,15 @@
 
 [Script]
 AMDC= type=http-response,requires-body=1,max-size=0,pattern=^http:\/\/amdc\.m\.taobao\.com,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amdc.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/message\/notice\/list,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/promotion-web\/resource,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
-AutoNavi = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/message\/notice\/list,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/promotion-web\/resource,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
+AutoNavi = type=http-response,requires-body=1,max-size=0,,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
 
 [MITM]
 hostname= %APPEND% *.amap.com
