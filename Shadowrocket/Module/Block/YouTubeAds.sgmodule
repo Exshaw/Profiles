@@ -1,18 +1,18 @@
 #!name=YouTube Advertising
-#!desc=Block YouTube Advertising (May 06 2025)
+#!desc=Block YouTube Advertising (May 07 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/YouTubeAds.sgmodule
 # @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/YoutubeAds.conf
 # @Maasea: https://github.com/Maasea/sgmodule/blob/master/YouTube.Enhance.sgmodule
 
+[Rule]
+AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com),(PROTOCOL,UDP)),REJECT
+
 [URL Rewrite]
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) - 302 $1$2$3
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-200
 
 [Script]
-YouTube = type=http-response,requires-body=1,max-size=0,binary-body-mode=1,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+YouTube = type=http-response,requires-body=1,max-size=-1,binary-body-mode=1,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"off","captionLang":"off","blockUpload":true,"blockImmersive":true,"blockShorts":false,"debug":false}"
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
