@@ -1,7 +1,7 @@
 #!name=AutoNavi Advertising
 #!desc=Block AutoNavi Advertising (May 06 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/AutoNaviAds.sgmodule
-# @ddgksf2013: https://github.com/ddgksf2013/Modules/blob/main/Adblock/AmapAds.sgmodule
+# @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/Amap.conf
 
 [URL Rewrite]
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject
