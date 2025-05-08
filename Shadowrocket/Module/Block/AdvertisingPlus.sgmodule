@@ -1,5 +1,5 @@
 #!name=Advertising+
-#!desc=Block Advertising+ (May 07 2025)
+#!desc=Block Advertising+ (May 08 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/AdvertisingPlus.sgmodule
 # @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/BilibiliAdsLite.conf
 
@@ -7,13 +7,13 @@
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/show - reject-200
 
 [Script]
-bilibili = type=http-response,requires-body=1,max-size=-1,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
-bilibili = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
-bilibili = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
-bilibili = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
-bilibili = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
-bilibili = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
-bilibili = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/search\/square,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
+bilibili = type=http-response,requires-body=true,max-size=-1,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
+bilibili = type=http-response,requires-body=true,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
+bilibili = type=http-response,requires-body=true,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
+bilibili = type=http-response,requires-body=true,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
+bilibili = type=http-response,requires-body=true,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
+bilibili = type=http-response,requires-body=true,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
+bilibili = type=http-response,requires-body=true,max-size=-1,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/search\/square,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/bilibili_json.js
 
 [MITM]
 hostname = %APPEND% app.bilibili.com
