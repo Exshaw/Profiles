@@ -1,0 +1,11 @@
+#!name=Cookie
+#!desc=Cookie (Jul 10 2025)
+#!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Cookie.sgmodule
+# @wf021325: https://github.com/wf021325/qx/blob/main/js/jd_price.js
+# @githubdulong: https://github.com/githubdulong/Script/blob/master/Surge/jd_price2.sgmodule
+
+[Script]
+Cookie = type=http-request,requires-body=true,max-size=-1,timeout=60,pattern=^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+
+[MITM]
+hostname = %APPEND% apapia-sqk-weblogic.manmanbuy.com
