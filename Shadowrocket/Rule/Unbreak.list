@@ -1,14 +1,16 @@
-# Unbreak (Apr 30 2025)
+# Unbreak (Oct 03 2025)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Direct+.list
 
-# > General
+# General
 DOMAIN,app.adjust.com
 DOMAIN,app.appsflyer.com
 DOMAIN,bdtj.tagtic.cn
-# > Alibaba
+
+# Alibaba
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
-# > Google
+
+# Google
 DOMAIN-SUFFIX,blog.google
 DOMAIN,ci.android.com
 DOMAIN,clientservices.googleapis.com
@@ -18,19 +20,27 @@ DOMAIN,redirector.gvt1.com
 DOMAIN,update.googleapis.com
 DOMAIN-SUFFIX,googletraveladservices.com
 DOMAIN-SUFFIX,googletraveladservices-cn.com
-# > Tencent
+
+# Tencent
 DOMAIN,fairplay.l.qq.com
 DOMAIN,livew.l.qq.com
 DOMAIN,vd.l.qq.com
 DOMAIN,vi.l.qq.com
-# > Strava
+
+# Strava
 DOMAIN,analytics.strava.com
-# > Umeng
+
+# Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
-# > iQIYI
+
+# Mozilla
+DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net
+
+# iQIYI
 DOMAIN-SUFFIX,msg.qy.net
-# > Unity Ads
+
+# Unity Ads
 DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN-SUFFIX,unityads.unitychina.cn
 DOMAIN,cdp.cloud.unity3d.com
