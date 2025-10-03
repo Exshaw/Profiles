@@ -28,9 +28,6 @@ DOMAIN-KEYWORD,openaicom
 # Cloudflare AI Gateway
 DOMAIN,gateway.ai.cloudflare.com
 
-# Cloudflare AI Gateway
-DOMAIN,gateway.ai.cloudflare.com
-
 # Gemini
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
