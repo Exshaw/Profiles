@@ -1,5 +1,5 @@
 #!name=AutoNavi Advertising
-#!desc=Block AutoNavi Advertising (Sep 02 2025)
+#!desc=Block AutoNavi Advertising (Oct 08 2025)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/AutoNaviAds.sgmodule
 # @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/AmapAds.conf
 
@@ -7,6 +7,7 @@
 DOMAIN-SUFFIX,optimus-ads.amap.com,DIRECT
 
 [URL Rewrite]
+^https?:\/\/.*\.amap\.com\/ws\/aos\/alimama\/splash_screen - reject-200
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject-dict
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
 ^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
@@ -27,4 +28,4 @@ AutoNavi = type=http-response, requires-body=true, max-size=-1, timeout=60, patt
 AutoNavi = type=http-response, requires-body=true, max-size=-1, timeout=60, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js
 
 [MITM]
-hostname = %APPEND% m5.amap.com, m5-zb.amap.com, center.amap.com
+hostname = %APPEND% m5.amap.com, m5-zb.amap.com, center.amap.com, amap-aos-info-nogw.amap.com
