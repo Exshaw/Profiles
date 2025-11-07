@@ -1,8 +1,10 @@
-# Artificial Intelligence (Oct 03 2025)
+# Artificial Intelligence (Nov 06 2025)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 
 # Apple Intelligence
 DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,apps.mzstatic.com
 DOMAIN,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
 DOMAIN,apple-relay.fastly-edge.com
