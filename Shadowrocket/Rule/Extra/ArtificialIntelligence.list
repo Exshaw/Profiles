@@ -1,16 +1,14 @@
-# Artificial Intelligence (Nov 22 2025)
+# Artificial Intelligence (Dec 29 2025)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 
 # Apple Intelligence
-DOMAIN-SUFFIX,apps.mzstatic.com
-DOMAIN-SUFFIX,gateway.icloud.com
+# https://support.apple.com/en-us/101555
+DOMAIN-SUFFIX,guzzoni.apple.com
 DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN,cp4.cloudflare.com
-DOMAIN,gspe1-ssl.ls.apple.com
-DOMAIN,guzzoni.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.apple.com
 
 # ChatGPT
 DOMAIN-SUFFIX,chat.com
@@ -39,10 +37,8 @@ DOMAIN,bard.google.com
 DOMAIN,gemini.google.com
 
 # Microsoft Copilot
-DOMAIN,copilot.microsoft.com
-DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
-DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN,copilot.microsoft.com,PROXY
+DOMAIN,copilot.bing.com,PROXY
 
 # xAI
 DOMAIN-SUFFIX,x.ai
