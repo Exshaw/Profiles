@@ -1,4 +1,4 @@
-# Artificial Intelligence (Dec 29 2025)
+# Artificial Intelligence (Jan 15 2026)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 
 # Apple Intelligence
@@ -28,17 +28,34 @@ DOMAIN-KEYWORD,openaicom
 # Cloudflare AI Gateway
 DOMAIN,gateway.ai.cloudflare.com
 
-# Gemini
+# Google
+# > AI Studio
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN,aistudio.google.com
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+# > DeepMind
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+# > Gemini
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN,ai.google.dev
 DOMAIN,bard.google.com
 DOMAIN,gemini.google.com
+# > NotebookLM
+DOMAIN-KEYWORD,notebooklm.google
+# > Search Labs
+DOMAIN-KEYWORD,labs.google
 
-# Microsoft Copilot
+# Microsoft
+# > Copilot
 DOMAIN,copilot.microsoft.com,PROXY
 DOMAIN,copilot.bing.com,PROXY
+# > GitHub Copilot
+DOMAIN-SUFFIX,githubcopilot.com
 
 # xAI
 DOMAIN-SUFFIX,x.ai
