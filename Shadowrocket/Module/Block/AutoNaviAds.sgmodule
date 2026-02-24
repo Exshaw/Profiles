@@ -1,5 +1,5 @@
 #!name=AutoNavi Ads
-#!desc=Block AutoNavi Ads (Oct 08 2025)
+#!desc=Block AutoNavi Ads (Feb 24 2026)
 #!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/AutoNaviAds.sgmodule
 # @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/AmapAds.conf
 
@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,optimus-ads.amap.com,DIRECT
 
 [URL Rewrite]
 ^https?:\/\/.*\.amap\.com\/ws\/aos\/alimama\/splash_screen - reject-200
+^https?:\/\/.*\.amap\.com\/v\d\/ai_rec\/ - reject-dict
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject-dict
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
 ^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
