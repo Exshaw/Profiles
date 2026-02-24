@@ -1,6 +1,6 @@
 #!name=CloudMusic Ads
-#!desc=Block CloudMusic Ads (May 08 2025)
-#!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/Advertising.sgmodule
+#!desc=Block CloudMusic Ads (Feb 24 2026)
+#!url=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Module/Block/CloudMusicAds.sgmodule
 # @ddgksf2013: https://github.com/ddgksf2013/Rewrite/blob/master/AdBlock/NeteaseAds.conf
 
 [URL Rewrite]
