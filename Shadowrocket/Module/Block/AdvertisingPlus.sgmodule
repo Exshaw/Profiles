@@ -7,13 +7,13 @@
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/show - reject-200
 
 [Script]
-BiliBili = type=http-response,requires-body=true,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/refs/heads/master/Shadowrocket/Script/AdvertisingPlus.js
-BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/refs/heads/master/Shadowrocket/Script/AdvertisingPlus.js
-BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/refs/heads/master/Shadowrocket/Script/AdvertisingPlus.js
-BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/refs/heads/master/Shadowrocket/Script/AdvertisingPlus.js
-BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/refs/heads/master/Shadowrocket/Script/AdvertisingPlus.js
-BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/refs/heads/master/Shadowrocket/Script/AdvertisingPlus.js
-BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/search\/square,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/refs/heads/master/Shadowrocket/Script/AdvertisingPlus.js
+BiliBili = type=http-response,requires-body=true,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Script/AdvertisingPlus.js
+BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Script/AdvertisingPlus.js
+BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Script/AdvertisingPlus.js
+BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Script/AdvertisingPlus.js
+BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Script/AdvertisingPlus.js
+BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Script/AdvertisingPlus.js
+BiliBili = type=http-response,requires-body=true,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/search\/square,script-path=https://raw.githubusercontent.com/Exshaw/Profiles/master/Shadowrocket/Script/AdvertisingPlus.js
 
 [MITM]
 hostname = %APPEND% app.bilibili.com
