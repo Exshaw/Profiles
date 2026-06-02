@@ -1,5 +1,4 @@
-/ @ddgksf2013: https://ddgksf2013.top/scripts/bilibili.ads.js
-
+// @ddgksf2013: https://ddgksf2013.top/scripts/bilibili.ads.js
 
 /***********************************************
 > 应用名称：墨鱼自用B站去广告脚本
