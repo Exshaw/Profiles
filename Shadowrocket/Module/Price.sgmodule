@@ -6,7 +6,7 @@
 # @Moli-X: https://github.com/Moli-X/Tool/blob/X/Loon/Plugin/Kelee/JD_Price.plugin
 
 [Script]
-Price = type=http-response,requires-body=true,max-size=-1,timeout=10,pattern=^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html, script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js
+Price = type=http-response,requires-body=true,max-size=-1,timeout=60,pattern=^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js
 
 [MITM]
 hostname = %APPEND% in.m.jd.com
