@@ -6,7 +6,7 @@
 # @Moli-X: https://github.com/Moli-X/Tool/blob/X/Loon/Plugin/Kelee/JD_Price.plugin
 
 [Script]
-Cookie = type=http-request,requires-body=true,max-size=-1,timeout=60,^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$, script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js
+Cookie = type=http-request,requires-body=true,max-size=-1,timeout=60,^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$,script-path=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script/JD_Price.js
 
 [MITM]
 hostname = %APPEND% apapia-sqk-weblogic.manmanbuy.co
