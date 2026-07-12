@@ -1,4 +1,4 @@
-# Artificial Intelligence (Jan 16 2026)
+# Artificial Intelligence (Jul 12 2026)
 # @ConnersHua: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 
 # Apple Intelligence
@@ -24,6 +24,11 @@ DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
+
+# Claude
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,anthropic.com
 
 # Cloudflare AI Gateway
 DOMAIN,gateway.ai.cloudflare.com
