@@ -85,8 +85,12 @@ DOMAIN,httpdnsmultiapi.meituan.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdnsmultiapivip.meituan.com,REJECT,extended-matching,pre-matching
 DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT,extended-matching,pre-matching
 DOMAIN,dnspod.meituan.httpdns.start.qcloud.com,REJECT,extended-matching,pre-matching
-IP-CIDR,202.90.108.13/32,REJECT,no-resolve
+DOMAIN-SUFFIX,dreport.meituan.net,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,d.meituan.net,REJECT,pre-matching,extended-matching
+IP-CIDR,202.90.110.46/32,REJECT,pre-matching,no-resolve
+IP-CIDR,202.90.108.13/32,REJECT,pre-matching,no-resolve
 IP-CIDR,202.90.110.46/32,REJECT,no-resolve
+IP-CIDR,202.90.108.13/32,REJECT,no-resolve
 
 # Momo
 DOMAIN,httpdns.immomo.com,REJECT,extended-matching,pre-matching
